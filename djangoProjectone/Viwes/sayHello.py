@@ -6,3 +6,6 @@ def sayHello(request):
 
 def sayHello2(request,name):
     return HttpResponse("I am second call , %s" %name)
+
+def sayHello3(request,name):
+    return HttpResponse("I am second call 3 , %s" %name)
