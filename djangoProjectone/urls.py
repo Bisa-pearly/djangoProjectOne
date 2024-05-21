@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .View import sayHello
+from .Viwes.sayHello import sayHello,sayHello2
+
 
 
 urlpatterns = [
     path('', sayHello),
+    path('say/<name>', sayHello2),
     path('admin/', admin.site.urls),
 ]
